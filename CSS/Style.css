@@ -1,18 +1,20 @@
 body {
     background-color:  hsl(30, 38%, 92%);
     font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    margin: 0;
 }
 .container {
     max-width: 600px;
     background-color: white;
-    border-radius: 3%;
-    margin: auto;
-    margin-top: 100px;
+    border-radius: 12px;
     display: flex;
 }
 main .container img {
-    width: 50%;
-    border-radius: 3% 0 0 3%;
+    width: 300px;
+    border-radius: 12px 0 0 12px;
 }
 main .container .text {
     padding: 20px;
@@ -27,6 +29,7 @@ main .container .text h1{
 main .container .text p{
     color: hsl(228, 12%, 48%);
     line-height: 1.5;
+    padding: 0 12px 0 0;
 }
 main .container .text .price {
     margin-top: 30px;
@@ -47,8 +50,8 @@ main .container .text .add {
     background-color:hsl(158, 36%, 37%) ;
     color: white;
     margin: 20px;
-    padding: 10px;
-    border-radius: 4%;
+    padding: 12px;
+    border-radius: 12px;
     text-align: center;
     font-size: 14px;
     width: 240px;
@@ -62,13 +65,20 @@ main .container .text .add i {
         flex-direction: column;
         border-radius: 3%;
         margin-top: 20px;
+        width: 90%;
+        margin-left: 5%;
+        
     }
     main .container img {
         width: 100%;
-        border-radius: 3% 3% 0 0;
+        border-radius: 3% 3% 0 0;    
     }
+       
+    
     .container .text h1 {
         font-size: 40px;
     }
-    }
-    
+}
+footer .attribution a {
+    color: hsl(158, 36%, 37%);
+}
